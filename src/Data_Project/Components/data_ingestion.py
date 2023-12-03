@@ -21,7 +21,8 @@ class DataIngestion:
     def intiate_data_ingetion(self):
         try:
             # Reading the data from mysql code
-            df=read_sql_data()
+            # df=read_sql_data()
+            df=pd.read_csv(os.path.join('artifacts/notebook/Data','raw.csv'))
 
             logging.info("Reading the data from My SQL database completed")
 
